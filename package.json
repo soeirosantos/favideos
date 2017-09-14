@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "lint": "eslint .",
+    "test-unit": "NODE_ENV=test YOUTUBE_API_KEY=mockedKey mocha ./*.spec.js"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.6.1",
+    "mocha": "^3.5.0",
+    "nock": "^9.0.14"
+  },
+  "dependencies": {}
+}
