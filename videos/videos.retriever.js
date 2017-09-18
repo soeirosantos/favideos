@@ -17,11 +17,10 @@ const YoutubeDetailRetriever = function() {
 
 VimeoDetailsRetriever.prototype.retrieve = function(sourceId, callback) {
     //TODO: implement
-    callback(new VideoDetail("mocked video", "vimeo mocked", "PT4M39S"))
+    callback(new VideoDetail("mocked video", "mocked vimeo video", "PT4M39S"))
 }
 
 YoutubeDetailRetriever.prototype.retrieve = function(sourceId, callback) {
-    let video = null
     const key = this.apiKey
     const options = {
         host: 'www.googleapis.com',
@@ -40,8 +39,7 @@ YoutubeDetailRetriever.prototype.retrieve = function(sourceId, callback) {
                                          youtubeVideo.snippet.description,
                                          youtubeVideo.contentDetails.duration))
             } catch (e) {
-                //XXX: dummy error handling for the purpose of this PoC
-                console.log('Error while consuming Youtube API: ' + e.message)
+                //XXX: dummy error handling for the purpose of this PoC                
                 callback(new VideoDetail())
             }
         })

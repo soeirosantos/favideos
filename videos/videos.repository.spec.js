@@ -3,7 +3,7 @@
 const videos = require('./videos.repository')
 const assert = require('assert')
 
-describe('videos', () => {
+describe('Video Repository', () => {
 
     let someVideo
 
@@ -56,7 +56,7 @@ describe('videos', () => {
     describe('.all', () => {
         it('should list all videos', () => {
             const before = videos.all()
-            const videoAdded = videos.save(someVideo)
+            videos.save(someVideo)
             const after = videos.all()
             assert(after.length >= before.length + 1)
         })

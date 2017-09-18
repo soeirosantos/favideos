@@ -13,11 +13,14 @@ describe('Video Retriever', () => {
         .reply(200, mockedResponse)
     })
 
-    it('Youtube retriever', function(done) {
-        VideoDetailRetreiver.YOUTUBE.retrieve("iEPTlhBmwRg", (video) => {
-            expect(video.title).to.equal('Maroon 5 - Moves Like Jagger ft. Christina Aguilera')
-            expect(video.description).to.equal('UK release: Sept 5th')
-            done()
+    describe('.retrieve', () => {
+        it('should retrieve video from Youtube', function(done) {
+            VideoDetailRetreiver.YOUTUBE.retrieve("iEPTlhBmwRg", (video) => {
+                expect(video.title).to.equal('Maroon 5 - Moves Like Jagger ft. Christina Aguilera')
+                expect(video.description).to.equal('UK release: Sept 5th')
+                done()
+            })
         })
     })
+
 })

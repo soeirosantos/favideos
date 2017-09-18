@@ -1,7 +1,6 @@
 'use strict'
 
 const _videos = []
-const _ = require('lodash')
 
 //TODO: extract to an util module
 function uuidv4() {
