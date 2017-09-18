@@ -50,5 +50,5 @@ describe('Video Service', () => {
                           sourceId: 'v5UlWrJWIu0',
                           description: 'adding a description to the video',
                           duration: 'PT4M38S',
-                          id: '602563ac-ac33-4c0a-8cf8-8bede61cc4a4' }]
+                          id: '602563ac-ac33-4c0a-8cf8-8bede61cc4a4'}]
 })

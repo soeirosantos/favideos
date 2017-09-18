@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/soeirosantos/favideos.svg?branch=master)](https://travis-ci.org/soeirosantos/favideos)
+[![Coverage Status](https://coveralls.io/repos/github/soeirosantos/favideos/badge.svg?branch=master)](https://coveralls.io/github/soeirosantos/favideos?branch=master)
 # Favideos - My Favorites videos
 
 It's a simple project where some concepts of Node.js testing are reviewed.
