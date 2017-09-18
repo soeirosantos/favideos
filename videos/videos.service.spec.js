@@ -35,7 +35,10 @@ describe('Video Service', () => {
 
     describe('.list', () => {
         it('should list videos using mocked return', () => {
-            sinon.mock(repository).expects('all').returns(mockedVideos)
+            // if you wouldn’t add an assertion for some specific call, don’t mock it. 
+            // Use a stub instead.
+            // sinon.mock(repository).expects('all').returns(mockedVideos)
+            sinon.stub(repository, 'all').returns(mockedVideos)
             service.list((videos) => {
                 expect(videos.length).is.equals(1)
             })
