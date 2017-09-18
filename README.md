@@ -46,4 +46,4 @@ Mocks (and mock expectations) are fake methods (like spies) with pre-programmed
 behavior (like stubs) as well as pre-programmed expectations. Mocks should only 
 be used for the method under test. In every unit test, there should be one unit 
 under test. The rule of thumb is: if you wouldn’t add an assertion for some 
-specific call, don’t mock it. Use a stub instead.
+specific call, don’t mock it. Use a stub instead...
